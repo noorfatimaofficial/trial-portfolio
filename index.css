@@ -1,0 +1,908 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgba(40, 44, 51);
+}
+
+.into{
+    position: relative;
+    top: 130px;
+    left: 14%;
+    font-size: 20px;
+    display: flex;
+    gap: 40px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+}
+.intoSub{
+    color: rgb(112, 119, 132);
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    word-spacing: 10px;
+    font-size: 16px;
+    position: relative;
+    top: 150px;
+    left: 14%;
+    font-weight: lighter;
+
+}
+.contact{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #C778DD;
+    background-color: transparent;
+    position: relative;
+    top: 200px;
+    left: 14%;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    /* font-weight: lighter; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    transition: background-color 2s ease-out;
+
+}
+.contact:hover{
+    background-color: rgba(199, 120, 221,0.2);}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;   
+  left: 0;
+  width: 100%;     
+  background: rgba(40, 44, 51);
+  z-index: 1000;
+}
+
+ul{
+    
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+li a{
+    color: rgb(93, 99, 110);
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+li a:hover{
+    color: white;
+}
+li a.current-page{
+    color: white;
+}
+.hash{
+    color: pink;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 20px;
+
+}
+
+ul a{
+    text-decoration: none;
+}
+.verticalLine {
+    position: absolute;
+    left: 42px;
+    height: 190px;
+    width: 1px;
+    background: rgb(93, 99, 110);
+
+}
+.fa-github,
+.fa-figma,
+.fa-facebook {
+    position: fixed;
+    left: 30px;   
+    color: rgb(180, 178, 178);
+}
+
+.fa-github { top: 200px;left: 30px; }
+.fa-figma  { top: 240px; margin-left: -4px;}
+.fa-facebook { top: 280px; margin-left: -3px;}
+
+.name{
+    position: relative;
+    /* margin-left: -10px; */
+    color:white;
+    margin-top: 30px;
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+.name i{
+    margin-left: -100px;
+}
+
+.currently {
+    position: relative;
+    top: -480px;
+    left: 55%;
+    color: white;
+    gap: 10px;
+    word-spacing: 12px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    display: flex;
+    align-items: center;         
+    position: relative;
+    font-size: 20px;
+    height: 40px;
+    width: 450px;
+    border: 2px solid rgb(93, 99, 110);
+    padding-right: 15px;
+    background-color: rgba(40, 44, 51);
+}
+
+.currently::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #C778DD;
+    margin-right: 8px;   /* ✅ little gap between box & text */
+    margin-left: 10px;
+    flex-shrink: 0;      /* ✅ keeps square fixed, doesn’t shrink */
+}
+.brain{
+    position: relative;
+    left: 900px;
+    top: -390px;
+    filter: drop-shadow(0 0 1px #fff)   
+            drop-shadow(0 0 2px #00f)               
+            drop-shadow(0 0 1px #fff)   
+            drop-shadow(0 0 4px #00f);
+
+}
+.dot{
+    height: 4px;
+    width: 4px;
+    border-radius:50% ;
+    background-color: #b3b3b3;
+}
+.dots{
+
+
+    margin-left: 82%;
+    /* margin-top: 40px; */
+    display: grid;
+    grid-template-columns: repeat(5,20px);
+    grid-template-rows: repeat(5,20px);
+    gap: 5px;
+}
+.quote{
+
+    position: relative;
+    top: 35px;
+    left:4%;
+    font-weight: lighter;
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 25px;
+
+}
+.mainQuote{
+    position: relative;
+    top: -370px;
+    left: 28%;
+    height: 15%;
+    width: 46%;
+    border: 2px solid rgb(93, 99, 110);
+}
+
+.quotationMarks{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 10;
+    background-color:rgba(40, 44, 51) ;
+    display: inline-block;
+    padding: 0 5px;
+    top: -220px;
+    left: 68%;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+}
+.quotationMarks1{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    background-color: rgba(40, 44, 51);
+    display: inline-block;  
+    padding: 0 4px; 
+    z-index: 10;
+    top: -500px;
+    left: 30%;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+}
+.author{
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    position: relative;
+    font: bolder;
+    font-size: 25px;
+    left: 64.15%;
+    top: -429px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgb(93, 99, 110);
+    border-top: none;
+    z-index: 100;
+
+
+}
+.sideBox{
+    position: relative;
+    left: 95%;
+    top: -590px;
+    height: 15%;
+    width: 100px;
+    border: 2px solid rgb(93, 99, 110);
+}
+
+.lowerDot{
+    height: 4px;
+    width: 4px;
+    border-radius:50% ;
+    background-color: #b3b3b3;
+}
+.lowerDots{
+    margin-top: -24%;
+    margin-left: 9px;
+    display: grid;
+    grid-template-columns: repeat(2, 20px); /* 2 columns */
+    grid-auto-rows: 20px;        
+    gap: 5px;
+}
+.hash1{
+    position: relative;
+    color: #C778DD;
+    margin-left: 10%;
+    /* margin-top: -260px; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+    top: -190px;
+    left: 155px;
+
+    
+}
+.project{
+    color: #C778DD;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+.project::after{
+  content: "";
+  display:flex;
+  width: 32%;
+  height: 0.1px;
+  background: #C778DD;
+  margin-top: -14px;
+  margin-left: 21%;
+}
+.viewAll{
+    text-decoration: none;
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 20px;
+    position: relative;
+    top: -225px;
+    left: 76%;
+
+
+}
+
+.projectBox{
+    position: relative;
+    top: -160px;
+    height: 220px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110) ;
+    display:inline-flex;
+    /* right: 20%; */
+    margin-right: 10px;
+    position: relative;
+    left: 195px;
+
+}
+#firstPic{
+    height: 220px;
+    width: 340px;
+}
+#secondPic{
+    height: 220px;
+    width: 340px;
+
+}
+#thirdPic{
+    height: 220px;
+    width: 340px;
+
+}
+.firstSubbox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    /* justify-content: center; */
+    /* padding-left: 8px; */
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 195px;
+    top: -165px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.centralSubbox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 205px;
+    top: -164px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.lastSubbox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 215px;
+    top: -164px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.firstBox{
+    height: 190px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    font-size: 15px;
+    /* align-items: center; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    /* font-weight: lighter; */
+    color:rgb(162, 171, 187);
+    border-top: none;
+    position: relative;
+    top: -216px;
+    left: 195px;
+
+
+}
+.innerfirstBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.Livebutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid #C778DD;;
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Livebutton a{
+    text-decoration: none;
+    color: white;
+}
+.Livebutton:hover{
+    background-color:rgba(199, 120, 221,0.2) ;
+}
+.Cachedbutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 2px solid rgb(93, 99, 110);
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Cachedbutton a{
+    text-decoration: none;
+    color: white;
+}
+.Cachedbutton:hover{
+    background-color:rgba(255, 255, 255, 0.05) ;
+}
+.buttonInner{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.secondBox{
+    color: white;
+    height: 190px;
+    border: 2px solid rgb(93, 99, 110);   
+    border-top: none;
+    width: 340px;
+    position: relative;
+    left:36.35%;
+    top: -458px;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+
+}
+.innersecondBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+
+}
+.innersecondbutton{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.thirdBox{
+    color: rgb(162, 171, 187);
+    height: 190px;
+    border: 2px solid rgb(93, 99, 110);   
+    border-top: none;
+    width: 340px;
+    position: relative;
+    left:59.94%;
+    top: -700px;    
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+}
+.innerthirdbox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.innerthirdbutton{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.rightBox{
+    height: 157px;
+    width: 70px;
+    border: 1px solid rgb(93, 99, 110);
+    border-right: none;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: -950px;
+}
+
+.hash2{
+    position: relative;
+    color: #C778DD;
+    margin-left: 10%;
+    /* margin-top: -260px; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+    top: 200px;
+    left: 55px;
+
+    
+}
+.skill{
+    color: #C778DD;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+.skill::after{
+  content: "";
+  display:flex;
+  width: 19%;
+  height: 0.1px;
+  background: #C778DD;
+  margin-top: -14px;
+  margin-left: 19%;
+}
+.squareShape{
+    position: relative;
+    top: 220px;
+    left: 32%;
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(93, 99, 110);
+}
+.shapeDots{
+    
+    
+    margin-left: 15%;
+    margin-top: 12%;
+    display: grid;
+    grid-template-columns: repeat(5,15px);
+    grid-template-rows: repeat(5,15px);
+}
+.shapeDotsSecond{
+    margin-left: 28%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,15px);
+    grid-template-rows: repeat(5,15px);
+}
+.squareShapeSecond{
+    position: relative;
+    /* top: -2%; */
+    left: 37%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(93, 99, 110);
+}
+
+.DoubleSquare1{
+    position: relative;
+    top: -90px;
+    left: 15%;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #C778DD;
+
+
+}
+.DoubleSquare11{
+    position: relative;
+    top: -200px;
+    left: 17%;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #C778DD;
+}
+ .bosex{
+    display: inline-flex;
+    gap: 20px;
+    /* margin-right: 20px; */
+    margin-left: 50%;
+    margin-top: -26%;
+ }
+.lang-box {
+  border: 2px solid rgb(150, 150, 150);   /* light grey border */
+  padding: 10px 15px;
+  width: 150px;    /* adjust width */
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  color: white;
+}
+
+.lang-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  padding-bottom: 5px;
+}
+
+.lang-box p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: rgb(200, 200, 200);
+}
+
+
+ .bosexSecond{
+    display: inline-flex;
+    gap: 20px;
+    /* margin-right: 20px; */
+    margin-left: 63.35%;
+    margin-top: -16%;
+ }
+ .SecondLang-box {
+  border: 2px solid rgb(150, 150, 150);   /* light grey border */
+  padding: 10px 15px;
+  width: 150px;    /* adjust width */
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  color: white;
+}
+
+.SecondLang-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  padding-bottom: 5px;
+}
+
+.SecondLang-box p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: rgb(200, 200, 200);
+}
+.hash3{
+    position: relative;
+    color: #C778DD;
+    margin-left: 10%;
+    /* margin-top: -260px; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+    top: -10px;
+    left: 55px;
+
+    
+}
+.aboutMe{
+    color: #C778DD;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+.aboutMe::after{
+  content: "";
+  display:flex;
+  width: 19%;
+  height: 0.1px;
+  background: #C778DD;
+  margin-top: -14px;
+  margin-left: 22%;
+}
+.about-me{
+    margin-left: 14%;
+    margin-top: 3%;
+    height: 50%;
+    width: 30%;
+    border: 1px solid rgb(40.44.51);
+    font-size: 18px;
+    color: rgb(136, 144, 161);
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-weight: lighter;
+
+}
+.cat{
+    position: relative;
+    z-index: -1;
+    left: 900px;
+    top: -692px;
+    filter: drop-shadow(0 0 1px #fff)   
+            drop-shadow(0 0 2px #00f)               
+            drop-shadow(0 0 1px #fff)   
+            drop-shadow(0 0 4px #00f);
+
+}
+.cat::after{
+  content: "";
+  display:flex;
+  width: 24%;
+  height: 1px;
+  transform: scaleY(0.5);
+  background: #00f;
+  margin-top: 3px;
+  /* margin-left: -5%; */
+  /* border: none; */
+}
+.leftBox{
+    position: relative;
+    height: 157px;
+    width: 80px;
+    border: 1px solid rgb(93, 99, 110);
+    border-left: none;
+    margin-top: -340px;
+}
+.shapeDotsThird{
+    /* z-index: -1; */
+    margin-left: 60%;
+    margin-top: -65%;
+    display: grid;
+    grid-template-columns: repeat(5,20px);
+    grid-template-rows: repeat(5,20px);
+}
+.shapeDotsForth{
+    margin-left: 70%;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(5,25px);
+    grid-template-rows: repeat(4,20px);
+}
+.shapeDotsFifth{
+    margin-left: 93%;
+    margin-top: -12%;
+    display: grid;
+    grid-template-columns: repeat(5,25px);
+    grid-template-rows: repeat(4,20px);
+}
+.readMore{
+    position: relative;
+    top: 5%;
+    height: 40px;
+    width: 140px;
+    background-color: transparent;
+    border: 2px solid #C778DD;;
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+}
+.readMore a{
+    text-decoration: none;
+    color: white;
+}
+.readMore:hover{
+    background-color:rgba(199, 120, 221,0.2) ;
+}
+.hash4{
+    position: relative;
+    color: #C778DD;
+    margin-left: 10%;
+    /* margin-top: -260px; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+    top: 290px;
+    left: 55px;
+
+    
+}
+.contactUs{
+    position: relative;
+    /* top: 30px; */
+    color: #C778DD;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+.contactUs::after{
+  content: "";
+  display:flex;
+  width: 14%;
+  height: 0.1px;
+  background: #C778DD;
+  margin-top: -14px;
+  margin-left: 22%;
+}
+.contactMe{
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: rgb(136, 144, 161);
+    font-size: 18px;
+    margin-top: 23%;
+    margin-left: 14%;
+
+}
+.shapeDotsSixth{
+    /* margin-left: 10%; */
+    margin-top: -5%;
+    display: grid;
+    grid-template-columns: repeat(3,20px);
+    grid-template-rows: repeat(5,20px);
+}
+.message-me{
+    height: 140px;
+    width: 200px;
+    border: 1px solid rgb(136, 144, 161);
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: -120px;
+
+}
+.message-me h2{
+    margin-left: 10%;
+}
+
+.mail {
+    margin-left: 10%;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: rgb(136, 144, 161);  
+}
+
+.mail a {
+    text-decoration: none;
+    color: inherit;              
+    font-size: 15px;
+    position: relative;    
+    top: -5px;
+}
+
+.discord {
+    margin-left: 10%;
+    position: relative;    
+    top: 15px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: rgb(136, 144, 161);  
+}
+
+.discord a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;              
+    font-size: 15px;
+}
+
+.fa-envelope, 
+.fa-discord {
+    color: inherit;              
+}
+.mail:hover,
+.discord:hover {
+    color: white;
+}
+.line{
+    margin-top: 10%;
+}
+
+.secondName{
+    position: relative;
+    color:white;
+    margin-top: 30px;
+    margin-left: 15%;
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+.name i{
+margin-left: -100px;
+/* border: 1px solid white; */
+border: none;
+}
+.bottom{
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    margin-left: 15%;
+    margin-top: 2%;
+    font-size: 15px;
+
+}
+.copyright{
+    color: rgb(136, 144, 161);
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 15px;
+    margin-left: 35%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+
+}
+.media{
+    position: relative;
+    left: 80%;
+    top: -219px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    font-weight: normal;
+
+}
+.bottomMedia{
+    margin-left: 78.98%;
+    margin-top: -221px;
+    filter: drop-shadow(0 0 1px #7895dd);
+}
+.bottomMedia a{
+    color: rgba(40, 44, 51);
+}
+
+
