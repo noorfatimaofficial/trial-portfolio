@@ -1,0 +1,694 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgba(40, 44, 51);
+}        
+nav{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;   
+  left: 0;
+  width: 100%;     
+  background: rgba(40, 44, 51);
+  z-index: 1000;
+}
+
+ul{
+    
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+li a{
+    color: rgb(93, 99, 110);
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+li a.current-page{
+    color: white;
+}
+li a:hover{
+    color: white;
+}
+.hash{
+    color: pink;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.verticalLine {
+    position: absolute;
+    left: 42px;
+    height: 190px;
+    width: 1px;
+    background: rgb(93, 99, 110);
+
+}
+.fa-github,
+.fa-figma,
+.fa-facebook {
+    position: fixed;
+    left: 30px;   
+    color: rgb(180, 178, 178);
+}
+
+.fa-github { top: 200px;left: 30px; }
+.fa-figma  { top: 240px; margin-left: -4px;}
+.fa-facebook { top: 280px; margin-left: -3px;}
+
+.name{
+    position: relative;
+    /* margin-left: -10px; */
+    color:white;
+    margin-top: 30px;
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+.name i{
+    margin-left: -100px;
+}
+.project{
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    font-weight:bold;
+    font-size: 30px ;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+.listOfProjects{
+        font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    font-weight:normal;
+    margin-left: 12%;
+    margin-top: 1%;
+    font-size:large;
+
+}
+.dot{
+    height: 4px;
+    width: 4px;
+    border-radius:50% ;
+    background-color: #b3b3b3;
+}
+.dots{
+    margin-left: 2%;
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3,25px);
+    grid-template-rows: repeat(4,10px);
+    gap: 5px;
+}
+
+.completeApp{
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    font-weight:normal;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 4%;
+
+}
+.projectBox{
+    position: relative;
+    height: 220px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110) ;
+    display:inline-flex;
+    margin-right: 10px;
+    position: relative;
+    left: 195px;
+
+}
+#firstPic{
+    height: 220px;
+    width: 340px;
+}
+#secondPic{
+    height: 220px;
+    width: 340px;
+
+}
+#thirdPic{
+    height: 220px;
+    width: 340px;
+
+}
+#forthPic{
+    height: 220px;
+    width: 340px;
+}
+#fifthPic{
+    height: 170px;
+    width: 340px;
+
+}
+.firstSubBox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 195px;
+    top: -4px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.centralSubBox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 205px;
+    top: -4px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.lastSubBox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 215px;
+    top: -4px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.firstBox{
+    height: 190px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    font-size: 15px;
+    /* align-items: center; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    /* font-weight: lighter; */
+    color:rgb(162, 171, 187);
+    border-top: none;
+    position: relative;
+    top: -56px;
+    left: 195px;
+
+
+}
+.innerfirstBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.Livebutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid #C778DD;;
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Livebutton a{
+    text-decoration: none;
+    color: white;
+}
+.Livebutton:hover{
+    background-color:rgba(199, 120, 221,0.2) ;
+}
+.Cachedbutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 2px solid rgb(93, 99, 110);
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Cachedbutton a{
+    text-decoration: none;
+    color: white;
+}
+.Cachedbutton:hover{
+    background-color:rgba(255, 255, 255, 0.05) ;
+}
+.buttonInner{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.secondBox{
+    color: white;
+    height: 190px;
+    border: 2px solid rgb(93, 99, 110);   
+    border-top: none;
+    width: 340px;
+    position: relative;
+    left:36.35%;
+    top: -266px;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+
+}
+.innersecondBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    /* margin-top: 15%; */
+
+}
+.innersecondbutton{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.thirdBox{
+    color: rgb(162, 171, 187);
+    height: 190px;
+    border: 2px solid rgb(93, 99, 110);   
+    border-top: none;
+    width: 340px;
+    position: relative;
+    left:59.94%;
+    top: -509px;    
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+}
+.innerthirdbox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.innerthirdbutton{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.rightBox{
+    height: 157px;
+    width: 70px;
+    border: 1px solid rgb(93, 99, 110);
+    border-right: none;
+    /* margin-right: 0px; */
+    margin-left: 95%;
+    margin-top: -1020px;
+}
+
+
+
+
+.secondProjectBox{
+    position: relative;
+    height: 220px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110) ;
+    display:inline-flex;
+    margin-right: 10px;
+    position: relative;
+    left: 195px;
+    top: 310px;
+
+}
+.secondProjectBoxFifthImg{
+    position: relative;
+    height: 170px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110) ;
+    display:inline-flex;
+    margin-right: 10px;
+    position: relative;
+    left: 195px;
+    top: 260px;
+
+}
+
+
+.SecondfirstSubBox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 195px;
+    top: 302px;
+    border-top: none;}
+    
+.SecondfirstSubBoxTwo{
+    height: 35px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: -143px;
+    top: 294px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.SecondcentralSubBox{
+    height: 40px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 205px;
+    top: 255px;
+    border-top: none;   
+
+}
+.inner{
+    margin-left: 5%;
+}
+.lastSubBox{
+    height: 30px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+    position: relative;
+    left: 215px;
+    top: -4px;
+    border-top: none;
+    
+
+}
+.inner{
+    margin-left: 5%;
+}
+.SubfirstBox{
+    height: 190px;
+    width: 340px;
+    border: 2px solid rgb(93, 99, 110);
+    font-size: 15px;
+    /* align-items: center; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    /* font-weight: lighter; */
+    color:rgb(162, 171, 187);
+    border-top: none;
+    position: relative;
+    top: 246px;
+    left: 195px;
+
+
+}
+.innerfirstBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.Livebutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid #C778DD;;
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Livebutton a{
+    text-decoration: none;
+    color: white;
+}
+.Livebutton:hover{
+    background-color:rgba(199, 120, 221,0.2) ;
+}
+.Cachedbutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 2px solid rgb(93, 99, 110);
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.Cachedbutton a{
+    text-decoration: none;
+    color: white;
+}
+.Cachedbutton:hover{
+    background-color:rgba(255, 255, 255, 0.05) ;
+}
+.buttonInner{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.SubsecondBox{
+    color: white;
+    height: 190px;
+    border: 2px solid rgb(93, 99, 110);   
+    border-top: none;
+    width: 340px;
+    position: relative;
+    left:36.35%;
+    top: 29px;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color:rgb(162, 171, 187);
+
+}
+.innersecondBox{
+    position: relative;
+    top: 20px;
+    margin-left: 10%;
+    /* margin-top: 15%; */
+
+}
+.innersecondbutton{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.leftBox{
+    position: relative;
+    height: 157px;
+    width: 80px;
+    border: 1px solid rgb(93, 99, 110);
+    border-left: none;
+    margin-top: 70px;
+    /* z-index: -1000; */
+}
+.hash1{
+    position: relative;
+    color: #C778DD;
+    margin-left: 10%;
+    /* margin-top: -26px; */
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+    top: -99px;
+    /* left: 155px; */
+
+    
+}
+
+.Smallproject{
+    color: #C778DD;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+.Seconddots{
+    margin-left: 94%;
+    margin-top: -14px;
+    display: grid;
+    grid-template-columns: repeat(4,20px);
+    grid-template-rows: repeat(5,20px);
+    gap: 5px;
+}
+.Thirddots{
+    /* margin-left: 1%; */
+    margin-top: 19.5%;
+    display: grid;
+    grid-template-columns: repeat(3,20px);
+    grid-template-rows: repeat(4,20px);
+    gap: 5px;
+}
+
+.bosex{
+    display: inline-flex;
+    position: relative;
+    top: -570px;
+    gap: 20px;
+    /* margin-right: 20px; */
+    margin-left: 15%;
+    /* margin-top: -126%; */
+ }
+.lang-box {
+  border: 2px solid rgb(150, 150, 150);   /* light grey border */
+  padding: 10px 15px;
+  width: 300px; 
+  height: 250px;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  color: rgb(136, 144, 161);
+  font-weight: normal;
+}
+
+.lang-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding-bottom: 19px;
+}
+
+.lang-box p {
+  margin: 5px 0;
+  font-size: 17px;
+  font-weight: lighter;
+  color: rgb(200, 200, 200);
+}
+.head{
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+}
+
+
+
+.smallprojectbutton{
+    height: 40px;
+    width: 110px;
+    background-color: transparent;
+    border: 1px solid #C778DD;;
+    color: white;
+    font-size: 15px;
+    font-weight:100px;
+
+}
+.smallprojectbutton a{
+    text-decoration: none;
+    color: white;
+}
+.smallprojectbutton:hover{
+    background-color:rgba(199, 120, 221,0.2) ;
+}
+.innerprojectsecondbutton{
+    /* margin-left: 5%; */
+    margin-top: 15%;
+}
+.boxex{
+    display: inline-flex;
+    position: relative;
+    top: -499px;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 15%;
+    /* margin-top: -926px; */
+ }
+.boxec{
+    display: inline-flex;
+    position: relative;
+    top: -449px;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 15%;
+    margin-bottom: -40%;
+    /* margin-top: -945px; */
+ }
+
+/* Bottom */
+
+.line{
+    margin-top: 10%;
+}
+
+.secondName{
+    position: relative;
+    color:white;
+    margin-top: 30px;
+    margin-left: 15%;
+     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+     font-size: 20px;
+}
+.name i{
+margin-left: -100px;
+/* border: 1px solid white; */
+border: none;
+}
+.bottom{
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    margin-left: 15%;
+    margin-top: 2%;
+    font-size: 15px;
+
+}
+.copyright{
+    color: rgb(136, 144, 161);
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 15px;
+    margin-left: 35%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+
+}
+.media{
+    position: relative;
+    left: 80%;
+    top: -219px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    color: white;
+    font-weight: normal;
+
+}
+.bottomMedia{
+    margin-left: 78.98%;
+    margin-top: -221px;
+    filter: drop-shadow(0 0 1px #7895dd);
+}
+.bottomMedia a{
+    color: rgba(40, 44, 51);
+}
+
